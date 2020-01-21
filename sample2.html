@@ -1,0 +1,114 @@
+<html>
+<head>
+    <script>
+        
+         
+         
+        function even_odd(a)
+        {
+            if(a%2==0)
+            {
+                document.write("even number");
+            }
+            else
+            {
+                document.write("odd number");
+               
+            }
+
+        }
+        even_odd(5);
+        function leap_year(a)
+        {
+            if(a%4==0)
+            {
+                document.write("<br>")
+                document.write("leap year");
+            }
+            else
+            {
+                document.write("<br>")
+                document.write("not a leap year");
+            }
+
+        }
+        leap_year(2014);
+        function fact(n)
+        {
+            var ans=1;
+            for(var i=2;i<=n;i++)
+            {
+                ans=ans*i;
+            }
+            document.write("<br>")
+            document.write("factorial of given number  is"+ans);
+        }
+        fact(5);
+        
+        function fact1(x)
+        {
+            if(x==1||x==0)
+            {
+                return 1;
+            }
+              
+            else
+            {
+                return x*fact1(x-1);
+            }
+               
+        }
+        document.write("<br>")
+        document.write("fact using recursion"+fact1(0));
+        function result(marks)
+        {
+            if(marks>=75)
+            {
+                document.write("<br>")
+                document.write("Distinction");
+            }
+            else if(marks<75&&marks>=65)
+            {
+                document.write("<br>")
+                document.write("First Class");
+               
+            }
+            else if(marks<65&&marks>=55)
+            {
+                document.write("second higher Class");
+               
+            }
+            else if(marks<55&&marks>=45)
+            {
+                document.write("<br>")
+                document.write("Second Class");
+               
+            }
+            else if(marks<45&&marks>=35)
+            {
+                document.write("<br>")
+                document.write("Pass Class");
+               
+            }
+            else{
+                document.write("<br>")
+                document.write("Failed")
+            }
+
+
+        }
+        result(66);
+        var arr=[10,30,60,56,77];
+        document.write("<br>")
+        document.write("sorted list"+arr.sort());
+        a=arr.sort()
+        sum=0;
+        for(var i=0;i<=2;i++)
+        {
+            sum=sum+a[i];
+        }
+        document.write("<br>")
+        document.write("sum of 3 number"+sum);
+    </script>
+</head>
+</html>
